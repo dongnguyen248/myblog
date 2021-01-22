@@ -2,6 +2,7 @@ require("./bootstrap");
 
 window.Vue = require('vue');
 import axios from "axios";
+import VueAxios from 'vue-axios'
 import Vue from "vue";
 // import Vuex from "vuex";
 // import VueRouter from "vue-router";
@@ -31,7 +32,7 @@ const Toast = Swal.mixin({
 });
 window.Swal = Swal;
 window.Toast = Toast;
-Vue.use(axios);
+Vue.use(VueAxios, axios);
 // Vue.use(VueRouter);
 // const router = new VueRouter({
 //     // routes,
@@ -43,6 +44,6 @@ const app = new Vue({
     // router,
     // store,
     components: {
-        homepage
+        'home-page': homepage
     }
 });

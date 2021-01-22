@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-    <homepage></homepage>
+    <home-page></home-page>
     </div>
 <script src="{{asset('js/app.js')}}"></script>
 </body>
